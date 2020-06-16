@@ -1,0 +1,5 @@
+Synthesis of seeds on 200621 
+
+To make 1.000e+15 seeds with a safety factor of 1.5:
+Total volume of seeds required is: 1034.48 (mL)
+Total mass of PEG- 5000 required is: 0.0352 (g)
