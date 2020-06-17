@@ -15,9 +15,9 @@ time_doubling = doubling_times{celltype};
 % Input target cell number at harvest
 target_num = 6e6;
 % Input safety factor
-sf = 1.5;
+sf = 2;
 % Input time (hr) between seeding and harvest
-time_lapsed = 80;
+time_lapsed = 18;
 % Output number of cells to seed
 seed_num = target_num*sf/(2^(time_lapsed/time_doubling));
 
@@ -25,9 +25,8 @@ seed_num = target_num*sf/(2^(time_lapsed/time_doubling));
 %% Export to file
 fileID = fopen('cell_seeding_calc.txt','w');
 
-fprintf(fileID, 'Cell seeding on %s \n\n', date);
-fprintf(fileID, 'To get %1.3e seeds with a safety factor of %1.1f:\n', np_num, sf);
-fprintf(fileID,'Total volume of seeds required is: %4.2f (mL)\n', vol_seeds_total);
-fprintf(fileID,'Total mass of PEG-%5.0f required is: %2.4f (g)\n', peg_mw, peg_mass);
+fprintf(fileID, 'Cell seeding of %s on %s \n\n', celltype, date);
+fprintf(fileID, 'To get %1.2e cells with a safety factor of %1.1f after %3.1f hours:\n', target_num, sf, time_lapsed);
+fprintf(fileID,'Seed %1.2e cells\n', seed_num);
 
 fclose(fileID);

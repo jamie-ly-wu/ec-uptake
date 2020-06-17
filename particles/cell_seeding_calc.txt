@@ -1,4 +1,4 @@
 Cell seeding of b16f1_tyr-1- on 200621 
 
-To get 6.00e+06 cells with a safety factor of 1.0 after 18.0 hours:
-Seed 3.00e+06 cells
+To get 6.00e+06 cells with a safety factor of 2.0 after 18.0 hours:
+Seed 6.00e+06 cells

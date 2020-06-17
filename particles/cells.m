@@ -8,14 +8,14 @@ date = '200621';
 %% Calculations
 
 % Doubling times for different cell types:
-%doubling_times = py.dict(pyargs('b16f1_tyr-1-',18,'htb14',40.5));
+doubling_times = py.dict(pyargs('b16f1_tyr-1-',18,'htb14',40.5));
 % Input cell type
 celltype = 'b16f1_tyr-1-';
-time_doubling = 18;%doubling_times{celltype};
+time_doubling = doubling_times{celltype};
 % Input target cell number at harvest
 target_num = 6e6;
 % Input safety factor
-sf = 1;
+sf = 2;
 % Input time (hr) between seeding and harvest
 time_lapsed = 18;
 % Output number of cells to seed
