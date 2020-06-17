@@ -1,0 +1,559 @@
+Invalid macro definition.
+
+
+jamie@DESKTOP-06ITB93 MINGW64 ~
+$ git config --global user.name jamiewu
+
+jamie@DESKTOP-06ITB93 MINGW64 ~
+$ git config --global user.email jamie.wu@mail.utoronto.ca
+
+jamie@DESKTOP-06ITB93 MINGW64 ~
+$ conda --version
+bash: conda: command not found
+
+jamie@DESKTOP-06ITB93 MINGW64 ~
+$ cd
+
+jamie@DESKTOP-06ITB93 MINGW64 ~
+$ cd/Users/jamie/Dropbox
+bash: cd/Users/jamie/Dropbox: No such file or directory
+
+jamie@DESKTOP-06ITB93 MINGW64 ~
+$ cd
+
+jamie@DESKTOP-06ITB93 MINGW64 ~
+$ pwd
+/c/Users/jamie
+
+jamie@DESKTOP-06ITB93 MINGW64 ~
+$ cd/Dropbox
+bash: cd/Dropbox: No such file or directory
+
+jamie@DESKTOP-06ITB93 MINGW64 ~
+$ cd Dropbox
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox
+$ ls
+ 20180405-01/          'Deposit Account Details _ CIBC _LYWu.pdf'  'PC binding data'/
+'Blog posts'/           desktop.ini                                'Peptide project'/
+ BME1478/              'EC Transport project'/                      PhD/
+'Camera Uploads (1)'/   Figures/                                    Screenshots/
+ CHIB/                 'Get Started with Dropbox Paper.url'         相機上傳/
+'CRISPY data'/         'Get Started with Dropbox.pdf'
+'CRISPY lit review'/    Papers/
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox
+$ cd 'EC Transport project'
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project
+$ cd Protocol
+bash: cd: Protocol: No such file or directory
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project
+$ ls
+ Data/   desktop.ini   Figures/  'Key papers'/   Meetings/  'Project planning'/   Protocols/   Writings/
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project
+$ cd Protocols
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols
+$ ls
+'~$Mice experiment label generator.xlsx'
+'Animal protocols'/
+'Antibody validation'/
+'cell number calculator.xlsx'
+ Colocalization/
+'DCM order.PNG'
+'EC uptake markers and antibodies.gsheet'
+'ICP protocol for organs.docx'
+ ilastik/
+'Label maker'/
+'MATLAB scripts'/
+'Nanoscale imaging of clinical specimens using conventional and rapid-expansion pathology.pdf'
+'PAGE protocol.docx'
+'TEM and immunogold'/
+'Tumour induction.docx'
+'Tutorial guidance for quantitative confocal microscopy - James Jonkman.pdf'
+'VPN config'/
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols
+$ cd 'MATLAB scripts"
+> ls
+>
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols
+$ cd 'MATLAB scripts'
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts
+$ ls
+'clarity_np distance away from vessel'/
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts
+$ cd 'clarity_np_dist'
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist
+$ ls
+dipstart.m  post_process_func.m  pre_process_func.m  tumour_analysis_func.m
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist
+$ git init
+Initialized empty Git repository in C:/Users/jamie/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist/.git/
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dipstart.m
+        post_process_func.m
+        pre_process_func.m
+        tumour_analysis_func.m
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git add dipstart.m post_process_func.m
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git add pre_process_func.m tumour_analysis_func.m
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git commit -m 'original scripts from zach for clarity image analysis'
+[master (root-commit) 2a53e69] original scripts from zach for clarity image analysis
+ 4 files changed, 460 insertions(+)
+ create mode 100644 dipstart.m
+ create mode 100644 post_process_func.m
+ create mode 100644 pre_process_func.m
+ create mode 100644 tumour_analysis_func.m
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git log
+commit 2a53e697e62e8250da13b2617ed3484bcfb209cd (HEAD -> master)
+Author: jamiewu <jamie.wu@mail.utoronto.ca>
+Date:   Sat Jun 6 12:43:42 2020 -0400
+
+    original scripts from zach for clarity image analysis
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git checkout 2a53e6
+Note: switching to '2a53e6'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 2a53e69 original scripts from zach for clarity image analysis
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist ((2a53e69...))
+$ git config --global color.ui true
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist ((2a53e69...))
+$ git status
+HEAD detached at 2a53e69
+nothing to commit, working tree clean
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist ((2a53e69...))
+$ git config --global color.ui false
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist ((2a53e69...))
+$ git status
+HEAD detached at 2a53e69
+nothing to commit, working tree clean
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist ((2a53e69...))
+$ git config --global color.ui true
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist ((2a53e69...))
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist ((2a53e69...))
+$ git log
+commit 2a53e697e62e8250da13b2617ed3484bcfb209cd (HEAD, master)
+$ git log
+commit 2a53e697e62e8250da13b2617ed3484bcfb209cd (HEAD, master)
+Author: jamiewu <jamie.wu@mail.utoronto.ca>
+Date:   Sat Jun 6 12:43:42 2020 -0400arity image analysis
+
+    original scripts from zach for clarity image analysisect/Protocols/MATLAB scripts/clarity_np_dist ((2a53e69...))
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist ((2a53e69...))
+$ git add dipstart.m
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist ((2a53e69...))
+$ git commit -m 'testing'
+HEAD detached at 2a53e69
+nothing to commit, working tree clean
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist ((2a53e69...))
+$ git checkout master
+Switched to branch 'master'
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ cd ..
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts
+$ cd test
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/test
+$ git init
+Initialized empty Git repository in C:/Users/jamie/Dropbox/EC Transport project/Protocols/MATLAB scripts/test/.git/
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/test (master)
+$ git add dipstart.m
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/test (master)
+$ git commit -m 'first commit'
+[master (root-commit) 11c2c6b] first commit
+ 1 file changed, 3 insertions(+)
+ create mode 100644 dipstart.m
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/test (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/test (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/test (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/test (master)
+$ cd ../clarity_np_dist
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git remote add origin https://github.com/jamie-ly-wu/ec-uptake
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git remote -v
+origin  https://github.com/jamie-ly-wu/ec-uptake (fetch)
+origin  https://github.com/jamie-ly-wu/ec-uptake (push)
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git push origin master
+To https://github.com/jamie-ly-wu/ec-uptake
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/jamie-ly-wu/ec-uptake'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git pull origin master
+warning: no common commits
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 649 bytes | 2.00 KiB/s, done.
+From https://github.com/jamie-ly-wu/ec-uptake
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+fatal: refusing to merge unrelated histories
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git push origin master
+To https://github.com/jamie-ly-wu/ec-uptake
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/jamie-ly-wu/ec-uptake'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git pull origin master
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 572 bytes | 5.00 KiB/s, done.
+From https://github.com/jamie-ly-wu/ec-uptake
+ * branch            master     -> FETCH_HEAD
+   6fc0ee5..5ae42bd  master     -> origin/master
+fatal: refusing to merge unrelated histories
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git push origin master
+To https://github.com/jamie-ly-wu/ec-uptake
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/jamie-ly-wu/ec-uptake'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git pull origin master
+From https://github.com/jamie-ly-wu/ec-uptake
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git pull origin master --allow-unrelated-histories
+From https://github.com/jamie-ly-wu/ec-uptake
+ * branch            master     -> FETCH_HEAD
+Already up to date!
+Merge made by the 'recursive' strategy.
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ git push origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 4.46 KiB | 4.46 MiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/jamie-ly-wu/ec-uptake
+   5ae42bd..0df11d8  master -> master
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts/clarity_np_dist (master)
+$ cd
+
+jamie@DESKTOP-06ITB93 MINGW64 ~
+$ cd ..
+
+jamie@DESKTOP-06ITB93 MINGW64 /c/Users
+$ cd ~/Users
+bash: cd: /c/Users/jamie/Users: No such file or directory
+
+jamie@DESKTOP-06ITB93 MINGW64 /c/Users
+$ pwd
+/c/Users
+
+jamie@DESKTOP-06ITB93 MINGW64 /c/Users
+$ cd Dropbox/'EC Transport project'/Protocols
+bash: cd: Dropbox/EC Transport project/Protocols: No such file or directory
+
+jamie@DESKTOP-06ITB93 MINGW64 /c/Users
+$ cd jamie
+
+jamie@DESKTOP-06ITB93 MINGW64 ~
+$ ls
+'3D Objects'/             ntuser.dat.LOG1
+ Anaconda3/               ntuser.dat.LOG2
+ AppData/                 NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf
+'Application Data'@       NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms
+ Contacts/                NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms
+ Cookies@                 ntuser.ini
+ Documents/               OneDrive/
+ Downloads/               OpenVPN/
+ Dropbox/                 openvpn-connect.json
+ Evernote/                ovpntray.log
+ Favorites/               PrintHood@
+'Google Drive'/           Recent@
+ IntelGraphicsProfiles/   Roaming/
+ Links/                  'Saved Games'/
+'Local Settings'@         Searches/
+ MicrosoftEdgeBackups/    SendTo@
+ Music/                  'Start Menu'@
+'My Documents'@           Templates@
+ NetHood@                 Videos/
+ NTUSER.DAT               Zotero/
+
+jamie@DESKTOP-06ITB93 MINGW64 ~
+$ cd Dropbox/'EC Transport project'
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project
+$ cd Protocols
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols
+$ ls
+'~$Mice experiment label generator.xlsx'
+'Animal protocols'/
+'Antibody validation'/
+'cell number calculator.xlsx'
+ Colocalization/
+'DCM order.PNG'
+'EC uptake markers and antibodies.gsheet'
+'ICP protocol for organs.docx'
+ ilastik/
+'Label maker'/
+'MATLAB scripts'/
+'Nanoscale imaging of clinical specimens using conventional and rapid-expansion pathology.pdf'
+'PAGE protocol.docx'
+'TEM and immunogold'/
+'Tumour induction.docx'
+'Tutorial guidance for quantitative confocal microscopy - James Jonkman.pdf'
+'VPN config'/
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols
+$ cd 'MATLAB scripts'
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts
+$ ls
+clarity_np_dist/  test/
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts
+$ git init
+Initialized empty Git repository in C:/Users/jamie/Dropbox/EC Transport project/Protocols/MATLAB scripts/.git/
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts (master)
+$ git add .
+warning: adding embedded git repository: clarity_np_dist
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> clarity_np_dist
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached clarity_np_dist
+hint:
+hint: See "git help submodule" for more information.
+warning: adding embedded git repository: test
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts (master)
+$ git commit -m 'adding folders'
+[master (root-commit) b66de83] adding folders
+ 2 files changed, 2 insertions(+)
+ create mode 160000 clarity_np_dist
+ create mode 160000 test
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts (master)
+$ git add remote https://github.com/jamie-ly-wu/ec-uptake
+fatal: pathspec 'remote' did not match any files
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts (master)
+$ git remote add https://github.com/jamie-ly-wu/ec-uptake
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts (master)
+$ git pull origin master --allow-unrelated-histories
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts (master)
+$ git remote add origin https://github.com/jamie-ly-wu/ec-uptake
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts (master)
+$ git push origin master
+To https://github.com/jamie-ly-wu/ec-uptake
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/jamie-ly-wu/ec-uptake'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts (master)
+$ git pull origin master --allow-unrelated-histories
+warning: no common commits
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 12 (delta 2), reused 7 (delta 2), pack-reused 0
+Unpacking objects: 100% (12/12), 5.61 KiB | 7.00 KiB/s, done.
+From https://github.com/jamie-ly-wu/ec-uptake
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+Merge made by the 'recursive' strategy.
+ dipstart.m             |   3 +
+ post_process_func.m    | 188 +++++++++++++++++++++++++++++++++++++++++++++++++
+ pre_process_func.m     |  99 ++++++++++++++++++++++++++
+ tumour_analysis_func.m | 170 ++++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 460 insertions(+)
+ create mode 100644 dipstart.m
+ create mode 100644 post_process_func.m
+ create mode 100644 pre_process_func.m
+ create mode 100644 tumour_analysis_func.m
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 690 bytes | 690.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jamie-ly-wu/ec-uptake
+   0df11d8..f4e394f  master -> master
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts (master)
+$ doskey /history > ~/Dropbox/'EC Transport project'/Protocols/'MATLAB scripts'
+bash: /c/Users/jamie/Dropbox/EC Transport project/Protocols/MATLAB scripts: Is a directory
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts (master)
+$ doskey /history > commands.log
+
+jamie@DESKTOP-06ITB93 MINGW64 ~/Dropbox/EC Transport project/Protocols/MATLAB scripts (master)
+$

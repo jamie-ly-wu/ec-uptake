@@ -1,0 +1,33 @@
+clear;
+clc;
+% This script calculates the number of cells to seed.
+
+% Input date of experiment
+date = '200621';
+
+%% Calculations
+
+% Doubling times for different cell types:
+doubling_times = py.dict(pyargs('b16f1_tyr-1-',18,'htb14',40.5));
+% Input cell type
+celltype = 'b16f1_tyr-1-';
+time_doubling = doubling_times{celltype};
+% Input target cell number at harvest
+target_num = 6e6;
+% Input safety factor
+sf = 1.5;
+% Input time (hr) between seeding and harvest
+time_lapsed = 80;
+% Output number of cells to seed
+seed_num = target_num*sf/(2^(time_lapsed/time_doubling));
+
+
+%% Export to file
+fileID = fopen('cell_seeding_calc.txt','w');
+
+fprintf(fileID, 'Cell seeding on %s \n\n', date);
+fprintf(fileID, 'To get %1.3e seeds with a safety factor of %1.1f:\n', np_num, sf);
+fprintf(fileID,'Total volume of seeds required is: %4.2f (mL)\n', vol_seeds_total);
+fprintf(fileID,'Total mass of PEG-%5.0f required is: %2.4f (g)\n', peg_mw, peg_mass);
+
+fclose(fileID);
